@@ -1,0 +1,38 @@
+body {
+    margin: 0px;
+}
+
+#header {
+    height: 80px;
+    background-color: #5514b4;
+}
+
+#navbar {
+    margin-left: 15%;
+    margin-right: 15%;
+    min-width: 800px;
+    padding-right: 100px;
+}
+
+#btLogo {
+    height: 46px;
+    vertical-align: -16px;
+}
+
+.navbarItems {
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 18px;
+    color: white;
+    line-height: 80px;
+    font-family: "bt_font_regular";
+}
+
+#navbarItemsRight {
+    float: right;
+}
+
+@font-face {
+    font-family:"bt_font_regular";
+    src:url("BTFont_W_Rg.woff") format("woff");
+}
