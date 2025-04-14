@@ -1,0 +1,90 @@
+<html>
+<head>
+    <title>Networks Data Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header">
+        <ul id="navbar">
+            <li class="navbarItem"><img id="btLogo" src="BTlogo_RGB_White.svg"></li>
+            <li class="navbarItem">About</li>
+            <li class="navbarItem">Ab Initio</li>
+            <li class="navbarItem">Charts</li>
+            <li class="navbarItem">Grafana</li>
+            <li class="navbarItem">Kafka</li>
+            <li class="navbarItem">SQL</li>
+            <li class="navbarItem" id="navbarItemright">Account</li>
+            <li class="navbarItem" id="navbarItemright">Help</li>
+        </ul>
+    </div>
+
+    <div id="welcome">
+        Networks Data Platform - Test GUI
+        <br /> <br />
+        <span id="heading">
+            Select from the options below, then click run.
+        </span>
+    </div>
+
+    <form>
+        <div id="menuBox">
+            <div id="menuHeader">
+                Input data type:
+            </div>
+            <div id="menuChoices">
+                <div id="menuChoice">
+                    <input type="radio" id="csv" name="inputType" value="csv">
+                    <label for="csv">CSV</label>
+                    <img id="menuIcon" src="csv_icon.svg.png">
+                </div>
+                <div id="menuChoice">
+                    <input type="radio" id="json" name="inputType" value="json">
+                    <label for="json">JSON</label>
+                    <img id="menuIcon" src="136443.png">
+                </div>
+                <div id="menuChoice">
+                    <input type="radio" id="xlsx" name="inputType" value="xlsx">
+                    <label for="xlsx">XLSX</label>
+                    <img id="menuIconExcel" src="microsoft-excel-icon-logo-symbol-free-png.webp">
+                </div>
+            </div>
+        </div>
+        <div id="menuBox">
+            <div id="menuHeader">
+                Data pipelines:
+            </div>
+            <div id="menuChoices">
+                <div id="menuChoice">
+                    <input type="checkbox" id="abinitio" name="dataPipeline" value="abinitio">
+                    <label for="abinitio">Ab Initio</label>
+                    <img id="menuIconAbInitio" src="ab-logo.svg">
+                </div>
+                <div id="menuChoice">
+                    <input type="checkbox" id="googleCharts" name="dataPipeline" value="googleCharts">
+                    <label for="googleCharts">Google Charts</label>
+                    <img id="menuIconExcel" src="Google+Developers.png">
+                </div>
+                <div id="menuChoice">
+                    <input type="checkbox" id="grafana" name="dataPipeline" value="grafana">
+                    <label for="grafana">Grafana</label>
+                    <img id="menuIcon" src="Grafana_icon.svg.png">
+                </div>
+                <div id="menuChoice">
+                    <input type="checkbox" id="kafka" name="dataPipeline" value="kafka">
+                    <label for="kafka">Kafka</label>
+                    <img id="menuIcon" src="kafka-icon.svg">
+                </div>
+                <div id="menuChoice">
+                    <input type="checkbox" id="postgresql" name="dataPipeline" value="postgresql">
+                    <label for="postgresql">PostgreSQL</label>
+                    <img id="menuIcon" src="postgresql-icon-1987x2048-v2fkmdaw.png">
+                </div>
+            </div>
+        </div>
+        <div id="formSubmit">
+            <input id="submit" type="submit" value="Run">
+        </div>
+    </form>
+</body>
+<script src="navbar.js"></script>
+</html>
