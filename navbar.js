@@ -11,7 +11,7 @@ function underline(e, state, underlineColor) {
     } else {
         if(state) {
             item.setAttribute("style", "font-weight: 600;");
-            cursorPointer(true);
+            cursorPointer(true);       
         } else {
             item.removeAttribute("style", "font-weight: 600;");
             cursorPointer(false);

@@ -20,10 +20,10 @@
 
     <div id="siteMenu">
         <ul id="siteMenuList">
-            <li class="siteMenuItem">Console</li>
-            <li class="siteMenuItem">Deployments</li>
-            <li class="siteMenuItem">Manifest files</li>
-            <li class="siteMenuItem">Output/Logs</li>
+            <li class="siteMenuItem siteMenuItemHeader">Console</li>
+            <li class="siteMenuItem siteMenuItemHeader">Deployments</li>
+            <li class="siteMenuItem siteMenuItemHeader">Manifest files</li>
+            <li class="siteMenuItem siteMenuItemHeader">Output/Logs</li>
         </ul>
     </div>
 
@@ -36,7 +36,7 @@
             </span>
         </div>
     
-        <form>
+        <form id="mainForm">
             <div id="menuBox">
                 <div id="menuHeader">
                     Input data type:
@@ -92,10 +92,17 @@
                 </div>
             </div>
             <div id="formSubmit">
-                <input id="submit" type="submit" value="Run">
+                <input class="submit" id="k8sSubmit" type="submit" value="K8s deployment">
+                <input class="submit" id="grafanaSubmit" type="submit" value="Data deployment">
             </div>
         </form>
-    </div>
+     </div> 
+     <div id="iframes">
+     </div>
+     <div id="footer">
+     </div>
 </body>
+<script src="jquery.js"></script>
 <script src="navbar.js"></script>
+<script src="grafana.js"></script>
 </html>

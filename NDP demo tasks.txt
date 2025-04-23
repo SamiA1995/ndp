@@ -1,0 +1,12 @@
+Get deployment details
+Console and dashboard
+
+Delete deployments
+Replicas
+
+
+minikube service my-service --url
+
+kubectl delete deployment grafana-deployment
+kubectl delete service my-service
+kubectl delete configmap myconfigmap

@@ -2,9 +2,22 @@ body {
     margin: 0px;
 }
 
+input[type=text] {
+    border-style: solid;
+    border-radius: 10px;
+    width: 200px;
+    font-family: bt_curve;
+    font-size: 14px;
+    height: 25px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
 #header {
     height: 80px;
+    width: 100%;
     background-color: #5514b4;
+    position: fixed;
 }
 
 #navbar {
@@ -24,8 +37,7 @@ body {
     margin-left: 30px;
     font-size: 18px;
     color: white;
-    line-height: 40px;
-    margin-top: 18px;
+    line-height: 50px;
     font-family: "bt_font_regular";
 }
 
@@ -52,36 +64,42 @@ body {
     font-family: "bt_curve";
     line-height: 30px;
     float: left;
-    width: 15%;
+    width: 12%;
     min-width: 200px;
     height: 100%;
     margin-top: 80px;
+    padding-top: 30px;
     border-right-style: solid;
     border-right-width: 1px;
     border-color: #dbdbdb;
-    margin-right: 80px;
+    position: fixed;
+    background-color: white;
 }
 
 #siteMenuList {
     list-style-type: none;
-    margin-left: 30px;
 }
 
 .siteMenuItem {
-    border-bottom-style: solid;
     margin-right: 50px;
-    border-color: #ededed;
     font-size: 14px;
+}
+
+.siteMenuItemHeader {
+    font-weight: bold;
 }
 
 #mainContent {
     float: left;
+    margin-top: 50px;
+    margin-left: 15%;
+    max-width: 50%;
 }
 
 #menuHeader {
     line-height: 30px;
     padding-left: 10px;
-    background-color: #f7f7f7;
+    background-color: #ededed;
     font-family: "bt_curve";
     font-weight: 600;
     font-size: 14px;
@@ -90,15 +108,24 @@ body {
 #menuBox {
     border-style: solid;
     border-width: 1px;
-    border-color: #f7f7f7;
+    border-color: #ededed;
     min-width: 800px;
     margin-top: 20px;
+    background-color: white;
 }
 
 #menuChoices {
     font-family: "bt_curve";
     font-size: 14px;
     padding: 20px;
+}
+
+#menuChoicesP {
+    padding-top: 5px;
+    font-family: "bt_curve";
+    font-size: 14px;
+    line-height: 10px;
+    padding-left: 20px;
 }
 
 #menuChoice {
@@ -134,23 +161,52 @@ body {
 }
 
 #formSubmit {
-    width: 60%;
-    margin-left: 5%;
+    width: 100%;
     margin-top: 30px;
     min-width: 800px;
 }
 
-#submit {
+.submit {
     float: right;
     background-color: black;
     border-style: none;
     border-radius: 20px;
     cursor: pointer;
     color: white;
-    width: 60px;
+    width: 160px;
     font-family: bt_curve;
     font-size: 14px;
     height: 30px;
+    margin-left: 30px;
+}
+
+#monospace {
+    white-space: pre-wrap;
+    font-family: monospace;
+    padding-left: 20px;
+}
+
+#iframes {
+    margin-top: 10px;
+    float: left;
+    margin-left: 15%;
+    width: 70%;
+}
+
+iframe {
+    margin-top: 20px;
+    height: 400px;
+    width: 100%;
+    border-style: none;
+}
+
+#grafanaConsoles {
+    height: 700px;
+}
+
+#footer {
+    height: 150px;
+    float: left;
 }
 
 @font-face {
